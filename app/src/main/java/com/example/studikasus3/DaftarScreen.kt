@@ -68,7 +68,6 @@ fun DaftarScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Tombol Pilih Tanggal Lahir warna biru muda
         Button(
             onClick = {
                 val calendar = Calendar.getInstance()
@@ -85,8 +84,8 @@ fun DaftarScreen(navController: NavController) {
             },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF64B5F6), // biru muda
-                contentColor = Color.White          // teks putih
+                containerColor = Color(0xFF64B5F6), 
+                contentColor = Color.White         
             )
         ) {
             Text("Pilih Tanggal Lahir")
@@ -94,15 +93,14 @@ fun DaftarScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Tombol DAFTAR warna biru muda
         Button(
             onClick = {
                 navController.navigate("detail/$nim/$nama/$email")
             },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF64B5F6), // biru muda
-                contentColor = Color.White          // teks putih
+                containerColor = Color(0xFF64B5F6), 
+                contentColor = Color.White          
             )
         ) {
             Text("DAFTAR")
