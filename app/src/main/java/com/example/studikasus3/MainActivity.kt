@@ -37,7 +37,6 @@ fun MyApp() {
                 DaftarScreen(navController)
             }
 
-            // Detail Screen (pakai argument dari route)
             composable("detail/{nim}/{nama}/{email}") { backStackEntry ->
                 val nim = backStackEntry.arguments?.getString("nim") ?: ""
                 val nama = backStackEntry.arguments?.getString("nama") ?: ""
