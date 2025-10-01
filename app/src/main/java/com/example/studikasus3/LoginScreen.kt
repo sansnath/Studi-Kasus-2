@@ -43,13 +43,13 @@ fun LoginScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Tombol LOGIN warna biru muda
+ 
         Button(
-            onClick = { /* misalnya cek login */ },
+            onClick = {  },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF64B5F6), // biru muda
-                contentColor = Color.White          // teks putih
+                containerColor = Color(0xFF64B5F6), 
+                contentColor = Color.White         
             )
         ) {
             Text("LOGIN")
@@ -57,13 +57,13 @@ fun LoginScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Tombol DAFTAR warna biru muda
+
         Button(
             onClick = { navController.navigate("daftar") },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF64B5F6), // biru muda
-                contentColor = Color.White          // teks putih
+                containerColor = Color(0xFF64B5F6), 
+                contentColor = Color.White          
             )
         ) {
             Text("DAFTAR")
